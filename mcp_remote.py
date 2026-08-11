@@ -1,6 +1,6 @@
 from fastmcp import FastMCP
 
-mcp = FastMCP('Restaurent')
+mcp = FastMCP("Restaurent")
 
 @mcp.tool
 def menu():
@@ -15,6 +15,4 @@ def locations():
     return locations
 
 if __name__ == '__main__':
-    mcp.run(transport='streamable-http',port = 5001,host = '0.0.0.0')
-
-    
+    mcp.run(transport='streamable-http', port=5001,host = '0.0.0.0')
